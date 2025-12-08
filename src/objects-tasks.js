@@ -152,14 +152,15 @@ function sellTickets(/* queue */) {
  *    console.log(r.height);      // => 20
  *    console.log(r.getArea());   // => 200
  */
-function Rectangle(width, height) {
-  const obj = {};
-  obj.width = width;
-  obj.height = height;
-  obj.getArea = function () {
-    return this.width * this.height;
-  };
-  return obj;
+function Rectangle(/* width, height */) {
+  // const obj = {};
+  // obj.width = width;
+  // obj.height = height;
+  // obj.getArea = function () {
+  //   return this.width * this.height;
+  // };
+  // return obj;
+  throw new Error('Not implemented');
 }
 
 /**
